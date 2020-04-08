@@ -1,0 +1,15 @@
+.clearfix() {
+    &::after {
+        content: "";
+
+        display: table;
+        clear: both;
+    }
+}
+
+.font-par(@font-size,@font-weight,@line-height) {
+    font-size: @font-size;
+    font-weight: @font-weight;
+    line-height: @line-height;
+    //font-family: 'Arial';
+}

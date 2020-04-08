@@ -1,0 +1,133 @@
+.contacts{
+    overflow: auto;
+    scroll-behavior: smooth;
+    
+    background: linear-gradient(to bottom, @about_bg 10%, #fff 90%);
+}
+.contacts__item{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.contacts__title{
+    font-family: 'Muller';
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.contacts__form{
+    display: flex;
+    flex-direction: column;
+    
+    label{
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .contacts__input{
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        background-color: lighten(@about_bg, 10%);
+        border:2px solid darken(@about_bg, 5%);
+        border-radius: 5px;
+        
+        &:hover{
+            background-color: lighten(@about_bg,2%);
+        }
+    }
+    textarea{
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        background-color: lighten(@about_bg, 10%);
+        border:2px solid darken(@about_bg, 5%);
+        border-radius: 5px;
+        
+        
+        &:hover{
+            background-color: lighten(@about_bg,2%);
+        }
+    }
+}
+.contacts__submit{
+    background-color: @green;
+    border:none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contacts__thanks{
+    font-size: 21px;
+    font-weight: 600;
+    font-family: 'Muller';
+    line-height: 25px;
+    
+   // background-color: @about_bg;
+}
+.contacts__item:nth-child(2){
+    margin: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow: auto;
+    background-color: @about_bg;
+  //  outline: 1px solid red;
+    
+    background: linear-gradient(to bottom, #fff, @about_bg);
+}
+@media(min-width: @tablet-width){
+    .contacts{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .contacts__title{
+        font-size: 31px;
+        padding: 0;
+    }
+    .contacts__wrapper{
+       display: flex;
+    }
+    .contacts__form{
+        
+        
+    }
+    .contacts__item{
+        
+        margin: 0;
+        width: 50%;
+    }
+    
+    .contacts__thanks{
+        font-size: 42px;
+        line-height: 1.2;
+        margin-top: 24px;
+        background-color: transparent;
+        
+    }
+    .contacts__item:nth-child(2){
+        //background-color: @white;
+        background-color: transparent;
+        padding-left: 30px;
+        padding-right: 30px;
+        background: transparent;
+    }
+}
+
+@media(min-width: @desktop-width){
+    .contacts{
+        padding-right: 100px;
+        padding-left: 100px;
+        padding-bottom: 40px;
+    }
+    .contacts__thanks{
+        font-size: 56px;
+        line-height: 1.2;
+        margin-top: 16px;
+        padding-left: 40px;
+        
+    }
+}

@@ -1,0 +1,345 @@
+{
+    "items": [
+        {
+            "id": 2,
+            "imageName": "cat_",
+            "title": "Online food store for cats \"Cat Energy\"",
+            "desc": "Multipage online store. Home page, product page, page with feedback form.",
+            "list": [
+                "Layout standards: HTML5, CSS3, progressive enhancement",
+                "Grid: defined in layout",
+                "Adaptability of the layout: Adaptive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari",
+                "Preprocessor used: Gulp + Less",
+                "Mobile first approach",
+                "Optimized performance for faster loading and ranking in Google"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "Less",
+                "Gulp",
+                "Mobile First",
+                "Adaptive",
+                "SVG",
+                "Mobile", 
+                "Tablet",
+                "Desktop"
+            ],
+            "link": "https://ilonikso.github.io/cat/"
+        },
+        
+        {
+            "id": 3,
+            "imageName": "barber_",
+            "title": "Barbershop Borodinski",
+            "desc": "Landing page of barbershop in Saint Peterburg.",
+            "list": [
+                "Layout standards: HTML5, CSS3, progressive enhancement",
+                "Grid: defined in layout",
+                "Adaptability of the layout: Adaptive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari",
+                "Preprocessor used: Gulp + Less",
+                "Mobile first approach",
+                "Optimized for download on the slow or mobile Internet"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "Less",
+                "Gulp",
+                "Mobile First",
+                "Adaptive",
+                "SVG",
+                "Mobile", 
+                "Tablet",
+                "Desktop"
+            ],
+            "link": "https://ilonikso.github.io/barber_adaptive/"
+        },
+
+        {
+            "id": 4,
+            "imageName": "sedona_",
+            "title": "Excursions to the city of \"Sedona\"",
+            "desc": "Multipage website of a tour operator in America.",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "Grid: defined in layout",
+                "Adaptability of the layout: Responsive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari",
+                "Preprocessor used: Gulp + Less",
+                "Typography: partially defined in the layout",
+                "Fonts used: PT Sans Narrow"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "Js",
+                "Gulp",
+                "Responsive", 
+                "Tablet",
+                "Desktop"
+            ],
+            "link": "https://ilonikso.github.io/Sedona_web/"
+        },
+
+        {
+            "id": 5,
+            "imageName": "keystone_",
+            "title": "Keystone Ventures Company Web Applicaiton",
+            "desc": "Web application for ventures company in Chicago",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "Grid: defined in layout",
+                "Adaptability of the layout: Responsive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari",
+                "Used technology: SCSS, Pug",
+                "Deskop First"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "Js",
+                "Gulp",
+                "Responsive", 
+                "Tablet",
+                "Desktop"
+            ],
+            "link": "https://ilonikso.github.io/keystone-test/"
+        },
+
+        {
+            "id": 6,
+            "imageName": "dappway-",
+            "title": "Website for Dappway software company",
+            "desc": "Website of a company that provides IT services. During the work, 5 pages were developed. Some of the pages are presented below.",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "Technologies: Less, VanilaJS, SVG, BEM",
+                "Grid: defined in layout",
+                "Adaptability of the layout: Responsive + Adaptive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari",
+                "Deskop First"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "SCSS",
+                "JS",
+                "Responsive",
+                "SVG", 
+                "Retina Ready",
+                "Mobile",
+                "Tablet",
+                "Desktop"
+            ],
+            "link": "https://ilonikso.github.io/25uhhj12488h12/"
+        },
+
+        {
+            "id": 7,
+            "imageName": "blast-",
+            "title": "Landing page of Blast company",
+            "desc": "The landing page of Blast crypto company. The main objective of the project was to create a site according to the layout, using the framework Bootstrap 4.",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "Technologies: SCSS, jQuery, Bootstrap 4",
+                "Grid: defined in layout",
+                "Adaptability of the layout: Responsive + Adaptive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari",
+                "Deskop First"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "JS",
+                "BEM",
+                "SCSS",
+                "Bootstrap 4",
+                "Responsive",
+                "Adaptive",
+                "SVG", 
+                "Retina Ready",
+                "Mobile",
+                "Tablet",
+                "Desktop"
+            ],
+            "link": "https://ilonikso.github.io/blast-test/"
+        },
+
+        {
+            "id": 8,
+            "imageName": "thyssen-",
+            "title": "Spanish version for ThyssenTrading website",
+            "desc": "Web site for a company that sells spices all over the world. The client’s task was to create the Spanish version of the site (4 pages), which is fully consistent with the English version.",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "Technologies: SVG / Retina Graphics",
+                "Grid: Custom Grid",
+                "Adaptability of the layout: Responsive + Adaptive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari",
+                "Best practics"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "JS",
+                "BEM",
+                "SCSS",
+                "Responsive",
+                "Adaptive",
+                "SVG", 
+                "Retina Ready",
+                "Mobile",
+                "Tablet",
+                "Desktop"
+            ],
+            "link": "http://www.thyssentrading.com/es-index.html"
+        },
+
+        {
+            "id": 9,
+            "imageName": "raheem-",
+            "title": "Landing Page for Raheem company",
+            "desc": "The client’s task: to create an adaptive PSD to HTML/CSS conversion, using the BEM methodology and the possibility of further expanding the site, adding pages, changing the content.",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "BEM Methodology + SCSS",
+                "Technologies: SVG / Retina Graphics",
+                "Grid: Custom Grid",
+                "Adaptability of the layout: Responsive + Adaptive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari",
+                "Best practics"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "SCSS",
+                "Responsive",
+                "Adaptive",
+                "SVG",
+                "Mobile",
+                "Tablet",
+                "Desktop"
+            ],
+            "link": "https://ilonikso.github.io/raheem-test/"
+        },
+
+        {
+            "id": 10,
+            "imageName": "heyya-",
+            "title": "Heyya - the website for the HR company.",
+            "desc": "Heyya - 5-page responsive website developed using modern technology. The site was developed using a Mobile-first approach and BEM methodology. <br> The work was done with high quality and on time. Working with Nick brought me not only pleasure but also invaluable experience!",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "BEM Methodology + SCSS",
+                "Technologies: SVG / Retina Graphics",
+                "Grid: Adaptive grid according to layout (CSS Grid + Flexboxes)",
+                "Adaptability of the layout: Responsive + Adaptive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari",
+                "Best practics"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "SCSS",
+                "Responsive",
+                "Adaptive",
+                "SVG",
+                "Mobile",
+                "Tablet",
+                "Desktop"
+            ],
+            "link": "https://ilonikso.github.io/hiyya-test/"
+        },
+
+        {
+            "id": 11,
+            "imageName": "wemake_",
+            "title": "Website of the WeMake - Engineering and Build company.",
+            "desc": "The client’s task was to create the Dutch version of the site (4 pages), which is fully consistent with the English version.An additional task was to create a feedback form. In the course of the work, small changes were made in the structure and design of the site.<br> The project was completed on time. Working with this client brought me only pleasure and I hope for our further cooperation! <br> ",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "BEM Methodology + SCSS",
+                "Technologies: SVG / Retina Graphics",
+                "Grid: Custom",
+                "Adaptability of the layout: Responsive + Adaptive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "SCSS",
+                "Responsive",
+                "Adaptive",
+                "SVG",
+                "Retina Ready"
+            ],
+            "link": "https://ilonikso.github.io/wemake-test/"
+        },
+
+        {
+            "id": 12,
+            "imageName": "seabright-",
+            "title": "Seabright - Landing page for a mobile application.",
+            "desc": "Completely responsive, modern website for the application, created on the basis of the latest technologies.<br>The design was provided in Figma. <br> Fast and high-quality website. The work was completed on time and the client was satisfied.",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "BEM Methodology + SCSS",
+                "Technologies: SCSS, SVG",
+                "Grid: Custom",
+                "Adaptability of the layout: Responsive + Adaptive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari",
+                "Best practics"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "SCSS",
+                "Responsive",
+                "Adaptive",
+                "SVG",
+                "Retina Ready",
+                "Mobile First"
+            ],
+            "link": "https://ilonikso.github.io/seabright-test/"
+        },
+
+        {
+            "id": 13,
+            "imageName": "trimstreet_",
+            "title": "[TEST] Trim Street - 8-page Website Layout for WordPress.",
+            "desc": "The site of a rental company. The main objective of the client was to develop a pixel-perfect HTML/CSS/JS code, which later will be used to create a wordpress theme.",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "BEM Methodology + SCSS",
+                "Pixel Perfect",
+                "Technologies: SCSS, SVG",
+                "Grid: Bootstrap 4",
+                "Adaptability of the layout: Responsive + Adaptive",
+                "Cross-browser compatibility: Chrome, Firefox, Safari."
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "Bootstrap 4",
+                "BEM",
+                "SCSS",
+                "SVG",
+                "Responsive",
+                "Adaptive"
+            ],
+            "link": "https://ilonikso.github.io/street-test/"
+        }
+    ]
+}

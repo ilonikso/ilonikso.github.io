@@ -1,0 +1,5 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+ErrorDocument 404 https://ilonikso.github.io/404.html
+order deny,allow

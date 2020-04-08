@@ -1,0 +1,241 @@
+.header{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.header__wrapper{
+    position: relative;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+.header__picture{
+    display: none;
+    width: 25%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.header__picture--mobile{
+    width: 100%;
+    display: block;
+    text-align: center;
+    
+    img{
+        width: 32%;
+    }
+}
+
+.header__title{
+    font-family: 'Muller';
+    font-size: 37px;
+    width: 70%;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.header__name{
+    font-family: 'Muller';
+    font-size: 28px;
+    font-weight: 400;
+    width: 200px;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.header__country{
+    font-family: 'Muller';
+    font-size: 21px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 10px;
+}
+
+.header__flag{
+    display: block;
+    width: 26px;
+    height: 16px;
+    background-color: #005BBB;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 4px;
+    left: 80px;
+}
+
+.header__flag::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    background-color: rgb(255, 225, 73);
+    position: absolute;
+}
+
+.header__text--top{
+  //  display: none;
+    margin-bottom: 25px;
+    font-size: 21px;
+}
+
+.header__text{
+    line-height: 1.5;
+    max-width: 65ch;
+}
+
+.header__top-button{
+    font-size: 0;
+    line-height: 0;
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+@media(min-width: @tablet-width){
+    .header{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    .header__title{
+        font-size: 56px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .header__name{
+        font-size: 42px;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .header__country{
+        font-size: 31px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .header__flag{
+        width: 32px;
+        height: 20px;
+        bottom: 7px;
+        left: 120px;
+    }
+    
+    .header__picture--mobile{
+        display: none;
+    }
+    
+    .header__text--add{
+        display: block;
+    }
+    
+    .header__wrapper{
+        display: flex;    
+    }
+    
+    .header__item{
+        width: 50%;
+        padding-right: 20px;
+    }
+    
+    .header__picture{
+       display: block;
+       margin: 0 auto;
+       margin-top: 30px;
+       margin-bottom: 30px;
+       width: 50%;
+    }
+    
+    .header__button{
+        width: 200px;
+    }
+    .header__text{
+        width: 400px;
+    }
+ 
+    .header__button{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        
+    }
+   
+    .header__top-button{
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        border: 2px solid @green;
+        position: fixed;
+        display: none;
+        right: 30px;
+        bottom: 90px;
+        font-size: 0;
+        line-height: 0;
+        z-index: 10;
+        
+        &:hover{
+            border: 2px solid @green;
+            background-color: @white;
+            transition: .3s ease-in;
+            box-shadow: 2px 2px 5px grey;
+        }
+        
+        &:active{
+            transform: scale(0.92);
+            transition: 0.2s ease;
+        }
+    }
+    
+    .header__top-button::before{
+        display: block;
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 30px;
+        background-color: @green;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .header__top-button::after{
+        display: block;
+        content: '';
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border-top: 3px solid @green;
+        border-left: 3px solid @green;
+        left: 50% - 17px;
+        top: 9px;
+        transform: rotate(45deg);
+    }        
+}
+
+@media(min-width: @desktop-width){
+    .header{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    
+    .header__picture{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .header__button{
+        margin-top: 0px;
+    }
+    
+    .header__country{
+        margin-bottom: 60px;
+    }
+    
+    .header__features{
+        width: 500px;
+        margin: 0 auto;
+    }
+}
