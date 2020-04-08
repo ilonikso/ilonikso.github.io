@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const less = require('gulp-less');
+const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
@@ -9,6 +10,10 @@ const browserSync = require('browser-sync').create();
 var imagemin = require("gulp-imagemin");
 var mqpacker = require("css-mqpacker");
 var rename = require("gulp-rename");
+
+
+
+sass.compiler = require('node-sass');
 
 /*Сборка SVG-спрайтов*/
 var svgstore = require("gulp-svgstore");
@@ -44,6 +49,20 @@ gulp.task('style', function() {
      .pipe(browserSync.stream());
 });
 
+gulp.task('sass', function () {
+  return gulp.src('source/sass/style.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('build/css'))
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(browserSync.stream());
+});
+
+gulp.task('sass:watch', function () {
+  gulp.watch('./sass/**/*.scss', ['sass']);
+});
+
 
 gulp.task("symbols", function() {
   return gulp.src("build/img/vector/*.svg")
@@ -68,9 +87,9 @@ gulp.task('serve', function(){
     });
     
     gulp.watch('source/less/**/*.less', gulp.series('style'));
+    gulp.watch('source/sass/**/*.scss',gulp.series('sass'));
     gulp.watch('source/*.html',gulp.series('html:copy'));
     gulp.watch('source/js/*.js',gulp.series('js:copy'));
-    gulp.watch('source/js/*.json',gulp.series('json:copy'));
     gulp.watch('build/*.html').on('change', browserSync.reload);
     gulp.watch('build/js/*.js').on('change', browserSync.reload);
     
@@ -87,11 +106,6 @@ gulp.task('js:copy', function() {
     .pipe(gulp.dest("build/js"));
     
 });
-gulp.task('json:copy', function() {
-  return gulp.src("source/js/*.json")
-    .pipe(gulp.dest("build/js"));
-    
-});
 gulp.task('scripts', function() {
   return gulp.src(['source/js/script.js', 'source/js/scroll.js', 'source/js/modal.js','source/js/modal__image.js'])
     .pipe(concat('all.js'))
@@ -102,7 +116,7 @@ gulp.task('scripts', function() {
 /*Таск для копирования*/
 gulp.task("copy", function() {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
+    "source/fonts/**",
     "source/img/**",
     "source/js/**",
     "source/*.html"
@@ -120,22 +134,31 @@ gulp.task("clean", function() {
 
 gulp.task("images", function() {
   
-  return gulp.src("build/img/raster/*.{png,jpg,gif}")
+  return gulp.src("build/img/*.{png,jpg,gif}")
     .pipe(imagemin([      
       imagemin.optipng({optimizationLevel: 3}), 
       imagemin.jpegtran({progressive: true}),  
       ]))
   
-    .pipe(gulp.dest("build/img/raster"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function(){
-   return gulp.src("build/img/raster/*.{jpg,png}")
+   return gulp.src("build/img/rester*.{jpg,png}")
     .pipe(webp({quality: 80}))
     .pipe(gulp.dest("build/img/raster"))
 });
 
-gulp.task('default',gulp.series(['clean','copy','style','images','webp','symbols','serve']), function(done) { 
+
+// Build task
+gulp.task('build',gulp.series(['clean','copy','sass','images','webp','symbols']), function(done) { 
+    
+  done();
+});;
+
+
+// Default task
+gulp.task('default',gulp.series(['clean','copy','sass','images','webp','symbols','serve']), function(done) { 
     
     done();
 });;
