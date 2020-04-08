@@ -106,7 +106,9 @@ gulp.task("copy", function() {
     "source/img/**",
     "source/js/**",
     "source/*.html",
-    "source/*.txt"
+    
+    "source/*.txt",
+    "source/*.htaccess"
     ], {
       /*gulp по умолчанию раскрывает путь до первых *(звездочек).
        Говорим что базовый путь начинается из корня*/
