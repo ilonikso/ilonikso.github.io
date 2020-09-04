@@ -1023,20 +1023,21 @@ img {
 .modal {
   opacity: 0;
   visibility: hidden;
-  width: 80%;
+  width: calc(100% - 40px - 40px);
+  max-height: calc(100vh - 40px - 40px);
   position: fixed;
-  margin: auto;
-  left: 0;
-  right: 0;
+  overflow-y: auto;
   z-index: 30;
-  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   padding: 20px;
   border-radius: 3px;
   background-color: #fff;
+  text-align: center;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
-  max-height: calc(88vh);
-  overflow-y: auto;
 }
 .modal .feaures__item {
   cursor: default;
@@ -1046,9 +1047,6 @@ img {
   opacity: 1;
   visibility: visible;
 }
-.modal.active {
-  top: 20px;
-}
 .modal__cross {
   width: 15px;
   height: 15px;
@@ -1057,6 +1055,8 @@ img {
   right: 20px;
   fill: #444;
   cursor: pointer;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
 }
 .modal__cross:hover {
   fill: #68b738;
@@ -1095,8 +1095,8 @@ img {
           align-items: center;
 }
 .modal__button:hover {
-  -webkit-box-shadow: 2px 2px 5px  grey;
-          box-shadow: 2px 2px 5px  grey;
+  -webkit-box-shadow: 2px 2px 5px grey;
+          box-shadow: 2px 2px 5px grey;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
@@ -1106,8 +1106,8 @@ img {
   transition: 0.3s ease-in;
 }
 .modal__button:active {
-  -webkit-box-shadow: 2px 2px 5px  grey;
-          box-shadow: 2px 2px 5px  grey;
+  -webkit-box-shadow: 2px 2px 5px grey;
+          box-shadow: 2px 2px 5px grey;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
@@ -1122,8 +1122,6 @@ img {
   overflow: auto;
   text-align: left;
   line-height: 1.5;
-  /* max-height: 500px;
-    overflow-y: scroll; */
 }
 .modal__text ul {
   margin: 0;
@@ -1173,8 +1171,8 @@ img {
   display: block;
 }
 .modal__button--active {
-  -webkit-box-shadow: 2px 2px 5px  grey;
-          box-shadow: 2px 2px 5px  grey;
+  -webkit-box-shadow: 2px 2px 5px grey;
+          box-shadow: 2px 2px 5px grey;
 }
 .modal__button--active svg {
   fill: #333;
@@ -1554,7 +1552,8 @@ img {
     line-height: 1.2;
   }
   .modal {
-    width: 90%;
+    width: calc(100% - 40px - 10%);
+    max-height: calc(100vh - 40px - 10%);
   }
   .modal__wrapper {
     display: -webkit-box;
@@ -1698,15 +1697,13 @@ img {
   .modal {
     min-height: 500px;
     width: 82%;
-    max-width: 1100px;
+    max-width: 1200px;
   }
   .modal__image {
     width: 60%;
   }
   .modal__text {
     width: 40%;
-    /* max-height: 300px;
-        overflow-y: scroll; */
   }
   .modal__text p,
   .modal__text li {
