@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // Create new modal or open old one
 const manageModal = function(data, e){
-    e.preventDefault();
+    // e.preventDefault();
     
     // Get data from JSON
     let arr = data;
