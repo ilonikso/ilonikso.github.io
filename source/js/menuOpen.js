@@ -1,8 +1,8 @@
-var navMain = document.querySelector(".main-nav");
-var navToggle = document.querySelector(".main-nav__toggle");
+const navMain = document.querySelector(".main-nav");
+const navToggle = document.querySelector(".main-nav__toggle");
 
 navMain.classList.remove("main-nav--nojs");
-navToggle.addEventListener("click", function() {
+navToggle.addEventListener("click",() => {
     if (navMain.classList.contains("main-nav--closed")) {
         navMain.classList.remove("main-nav--closed");
         navMain.classList.add("main-nav--opened");
@@ -15,8 +15,10 @@ navToggle.addEventListener("click", function() {
 const moreProjButton = document.querySelector("#more-proj-button");
 const itemsContainer = document.querySelector(".photo__wrapper");
 
-moreProjButton.addEventListener("click", function(e) {
+moreProjButton.addEventListener("click",(e) => {
     itemsContainer.classList.toggle("photo__wrapper--hide");
 
     e.preventDefault();
 });
+
+

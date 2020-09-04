@@ -1,26 +1,57 @@
-let arr = null;
+// Fetch JSON data from server
 window.addEventListener("DOMContentLoaded", () => {
     fetch("js/portfolioItems.json")
-        .then(function(res) {
-            return res.json();
+        .then((res) => res.json())
+        .then((data) => {
+            // Create new modals
+            document.body.addEventListener('click', (e) => manageModal(data, e));
         })
-        .then(function(data) {
-            arr = data;
-
-            arr.items.forEach(item => {
-                document.querySelector(".modal__container").appendChild(createPortolioItem(item));
-                modalListeners();
-                modalImagesSwitch();
-            });
-        })
-        .catch(function(err) {
-            console.log(err);
-        });
+        .catch((err) => console.log(err));
 });
 
+// Create new modal or open old one
+const manageModal = function(data, e){
+    e.preventDefault();
+    
+    // Get data from JSON
+    let arr = data;
+    
+    if(e.target !== document.body){
+        if(e.target.parentElement.parentElement.classList.contains('photo__item')){
+    
+            // Catch the modal item
+            let card = e.target.parentElement.parentElement;
+            let dataModal = card.getAttribute('data-modal');
+    
+            // Check for old modals
+            let modals = Array.from(document.querySelectorAll('.modal__container .modal'));
+    
+            // Check for the presence of the module in the container - if not - create a new one, if there is - open an existing module
+            if(!modals.some((item) => item.getAttribute('data-modal') === dataModal)){
+                
+                // Find the data for modal
+                let modalData = arr.items.find((item) => item.id == dataModal);
+                // Create modal window
+                let modal = createPortolioItem(modalData);
+                // Add modal window to container
+                document.querySelector(".modal__container").appendChild(modal);
+                modalShow(modal);
+    
+                // Add event listeners to modal window
+                modalListeners();
+                modalImagesSwitch();
+    
+            } else{
+                // Modal was created before - find and open existing modal window
+                const modalElem = document.querySelector('.modal[data-modal="' + dataModal + '"]');
+                modalShow(modalElem);
+            }
+        }
+    }
+    
+};
 
-
-// Create portfolio modal fucntion
+// Create portfolio modal template fucntion
 const createPortolioItem = function(item) {
     let block = document.createElement("div");
     block.classList.add("modal");
@@ -130,7 +161,7 @@ const createPortolioItem = function(item) {
     link.setAttribute("href", item.link);
     link.setAttribute("target", "_blank");
     link.classList.add("modal__link", "button");
-    link.textContent = "Live priview";
+    link.textContent = "Live preview";
 
     // Add link to block
     block.appendChild(link);
@@ -143,19 +174,7 @@ const modalListeners = function() {
     const modalButtons = document.querySelectorAll(".js-open-modal"),
         overlay = document.querySelector(".js-overlay-modal"),
         closeButtons = document.querySelectorAll(".js-modal-close");
-
-    modalButtons.forEach(function(item) {
-        item.addEventListener("click", function(e) {
-            e.preventDefault();
-
-            const modalId = this.getAttribute("data-modal"),
-                  modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
-
-            modalElem.classList.add("active");
-            overlay.classList.add("active");
-            document.body.style.overflow = "hidden";
-        });
-    });
+        
 
     closeButtons.forEach(function(item) {
         item.addEventListener("click", function(e) {
@@ -163,9 +182,9 @@ const modalListeners = function() {
 
             parentModal.classList.remove("active");
             overlay.classList.remove("active");
-            document.body.style.overflow = "auto";
+            document.body.style.overflow = "inherit";
         });
-    }); // end foreach
+    }); 
 
     document.body.addEventListener("keyup", function(e) {
             const key = e.keyCode;
@@ -173,7 +192,7 @@ const modalListeners = function() {
             if (key == 27) {
                 document.querySelector(".modal.active").classList.remove("active");
                 document.querySelector(".overlay").classList.remove("active");
-                document.body.style.overflow = "auto";
+                document.body.style.overflow = "inherit";
             }
         },
         false
@@ -183,7 +202,7 @@ const modalListeners = function() {
         document.querySelector(".modal.active").classList.remove("active");
         this.classList.remove("active");
 
-        document.body.style.overflow = "auto";
+        document.body.style.overflow = "inherit";
     });
 };
 
@@ -221,3 +240,12 @@ const modalImagesSwitch = function() {
         });
     });
 };
+
+// Show modal
+const modalShow = function(item){
+
+    item.classList.add("active");
+    document.querySelector(".js-overlay-modal").classList.add("active");
+    document.body.style.overflow = "hidden";
+}
+

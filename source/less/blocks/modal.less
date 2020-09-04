@@ -1,143 +1,135 @@
 .overlay {
-   opacity: 0;
-   visibility: hidden;
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(0, 0, 0, .5);
-   z-index: 20;
-   transition: .3s all;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    transition: 0.3s all;
 }
 
-.modal {   
-   opacity: 0;
-   visibility: hidden;
-   width: 80%;
-   position: fixed;
-   //top: 20px;
-   margin: auto;
-   left: 0;
-   right: 0;
-   z-index: 30;
-   //box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
-   text-align: center;
-   padding: 20px;
-   border-radius: 3px;
-   background-color: #fff;
-   transition: 0.3s all;
-   max-height: calc(88vh);
-   overflow-y: auto;
-    
-    .feaures__item{
+.modal {
+    opacity: 0;
+    visibility: hidden;
+
+    width: calc(100% - 40px - 40px);
+    max-height: calc(100vh - 40px - 40px);
+    position: fixed;
+    overflow-y: auto;
+    z-index: 30;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #fff;
+    text-align: center;
+    transition: 0.3s all;
+
+    .feaures__item {
         cursor: default;
     }
 }
 
 .modal.active,
-.overlay.active{
-   opacity: 1;
-   visibility: visible;
-}
-
-.modal.active{
-    top: 20px;
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal__cross {
-   width: 15px;
-   height: 15px;
-   position: absolute;
-   top: 20px;
-   right: 20px;
-   fill: #444;
-   cursor: pointer;
-    
-    &:hover{
-        fill: @green; 
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+
+    &:hover {
+        fill: @green;
         transform: scale(1.2);
-       
     }
-    &:active{
+    &:active {
         fill: darken(@green, 20%);
         transform: scale(0.9);
     }
 }
 
-.modal__buttons{
+.modal__buttons {
     outline: 1px solid #e1e1e1;
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    
-    input{
+
+    input {
         display: none;
     }
 }
 
-.modal__button{
+.modal__button {
     width: 80px;
     height: 50px;
     display: flex;
     padding-top: 5px;
     padding-bottom: 5px;
     align-items: center;
-    
-    &:hover{
-        box-shadow: 2px 2px 5px  grey;
+
+    &:hover {
+        box-shadow: 2px 2px 5px grey;
         transition: 0.3s ease-in;
-        
-        svg{
-            fill:@green;
+
+        svg {
+            fill: @green;
             transition: 0.3s ease-in;
         }
     }
-    
-    &:active{
-        box-shadow: 2px 2px 5px  grey;
+
+    &:active {
+        box-shadow: 2px 2px 5px grey;
         transform: scale(0.95);
-        
-        svg{
+
+        svg {
             fill: darken(@green, 10%);
-            
         }
     }
 }
 
-.modal__button-svg{    
-        margin: 0 auto;
-        fill: #333;
+.modal__button-svg {
+    margin: 0 auto;
+    fill: #333;
 }
 
-.modal__text{
+.modal__text {
     overflow: auto;
     text-align: left;
     line-height: 1.5;
 
-    /* max-height: 500px;
-    overflow-y: scroll; */
-    
-    ul{
+    ul {
         margin: 0;
         padding-left: 20px;
     }
 }
 
-.modal__title{
+.modal__title {
     font-size: 21px;
     margin-bottom: 10px;
     margin-top: 15px;
 }
 
-.modal__blocks{
+.modal__blocks {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.modal__link{
+.modal__link {
     background-color: @white;
     color: @text-color;
     border: 2px solid @text-color;
@@ -147,81 +139,77 @@
     float: right;
     padding-bottom: 12px;
     margin-top: 5px;
-    
-    &:hover{
-        color:@white;
+
+    &:hover {
+        color: @white;
         border-color: @white;
     }
 }
 
-.modal__item-img{
-    display: none;    
+.modal__item-img {
+    display: none;
 }
 
-
-.modal__image-box{
+.modal__image-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-   // height: 360px;
-  //  outline: 2px dotted blue;
 }
 
-.slide-active{
-   display: block;
+.slide-active {
+    display: block;
 }
 
-.modal__button--active{    
-    box-shadow: 2px 2px 5px  grey;
+.modal__button--active {
+    box-shadow: 2px 2px 5px grey;
 
-    svg{
+    svg {
         fill: #333;
     }
 }
 
-@media(min-width:@tablet-width){
-    .modal{
-        width: 90%;
+@media (min-width: @tablet-width) {
+    .modal {
+        width: calc(100% - 40px - 10%);
+        max-height: calc(100vh - 40px - 10%);
     }
-    
-    .modal__wrapper{
+
+    .modal__wrapper {
         display: flex;
     }
-    
-    .modal__image{
+
+    .modal__image {
         width: 50%;
         padding-top: 20px;
     }
-    
-    .modal__text{
+
+    .modal__text {
         width: 50%;
         padding-left: 20px;
     }
-    
-    .modal__buttons{
+
+    .modal__buttons {
         margin-top: 20px;
     }
 }
 
-@media(min-width:@desktop-width){
-    .modal{
+@media (min-width: @desktop-width) {
+    .modal {
         min-height: 500px;
         width: 82%;
-        max-width: 1100px;
+        max-width: 1200px;
     }
-    
-    .modal__image{
+
+    .modal__image {
         width: 60%;
     }
-    
-    .modal__text{
-        width: 40%;
 
-        /* max-height: 300px;
-        overflow-y: scroll; */
+    .modal__text {
+        width: 40%;
         
-        p,li{
+        p,
+        li {
             max-width: 50ch;
         }
     }

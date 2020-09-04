@@ -23,13 +23,12 @@
                 "Mobile First",
                 "Adaptive",
                 "SVG",
-                "Mobile", 
+                "Mobile",
                 "Tablet",
                 "Desktop"
             ],
             "link": "https://ilonikso.github.io/cat/"
         },
-        
         {
             "id": 3,
             "imageName": "barber_",
@@ -53,13 +52,12 @@
                 "Mobile First",
                 "Adaptive",
                 "SVG",
-                "Mobile", 
+                "Mobile",
                 "Tablet",
                 "Desktop"
             ],
             "link": "https://ilonikso.github.io/barber_adaptive/"
         },
-
         {
             "id": 4,
             "imageName": "sedona_",
@@ -80,13 +78,12 @@
                 "BEM",
                 "Js",
                 "Gulp",
-                "Responsive", 
+                "Responsive",
                 "Tablet",
                 "Desktop"
             ],
             "link": "https://ilonikso.github.io/Sedona_web/"
         },
-
         {
             "id": 5,
             "imageName": "keystone_",
@@ -106,13 +103,12 @@
                 "BEM",
                 "Js",
                 "Gulp",
-                "Responsive", 
+                "Responsive",
                 "Tablet",
                 "Desktop"
             ],
             "link": "https://ilonikso.github.io/keystone-test/"
         },
-
         {
             "id": 6,
             "imageName": "dappway-",
@@ -133,7 +129,7 @@
                 "SCSS",
                 "JS",
                 "Responsive",
-                "SVG", 
+                "SVG",
                 "Retina Ready",
                 "Mobile",
                 "Tablet",
@@ -141,7 +137,6 @@
             ],
             "link": "https://ilonikso.github.io/dappway-test/"
         },
-
         {
             "id": 7,
             "imageName": "blast-",
@@ -164,7 +159,7 @@
                 "Bootstrap 4",
                 "Responsive",
                 "Adaptive",
-                "SVG", 
+                "SVG",
                 "Retina Ready",
                 "Mobile",
                 "Tablet",
@@ -172,7 +167,6 @@
             ],
             "link": "https://ilonikso.github.io/blast-test/"
         },
-
         {
             "id": 8,
             "imageName": "thyssen-",
@@ -194,7 +188,7 @@
                 "SCSS",
                 "Responsive",
                 "Adaptive",
-                "SVG", 
+                "SVG",
                 "Retina Ready",
                 "Mobile",
                 "Tablet",
@@ -202,7 +196,6 @@
             ],
             "link": "http://www.thyssentrading.com/es-index.html"
         },
-
         {
             "id": 9,
             "imageName": "raheem-",
@@ -231,7 +224,6 @@
             ],
             "link": "https://ilonikso.github.io/raheem-test/"
         },
-
         {
             "id": 10,
             "imageName": "heyya-",
@@ -260,7 +252,6 @@
             ],
             "link": "https://ilonikso.github.io/hiyya-test/"
         },
-
         {
             "id": 11,
             "imageName": "wemake_",
@@ -286,7 +277,6 @@
             ],
             "link": "https://ilonikso.github.io/wemake-test/"
         },
-
         {
             "id": 12,
             "imageName": "seabright-",
@@ -314,11 +304,10 @@
             ],
             "link": "https://ilonikso.github.io/seabright-test/"
         },
-
         {
             "id": 13,
             "imageName": "trimstreet_",
-            "title": "[TEST] Trim Street - 8-page Website Layout for WordPress.",
+            "title": "Trim Street - 8-page Website Layout for WordPress.",
             "desc": "The site of a rental company. The main objective of the client was to develop a pixel-perfect HTML/CSS/JS code, which later will be used to create a wordpress theme.",
             "list": [
                 "Layout standards: HTML5, CSS3",
@@ -340,6 +329,104 @@
                 "Adaptive"
             ],
             "link": "https://ilonikso.github.io/street-test/"
+        },
+        {
+            "id": 14,
+            "imageName": "dappdouble_",
+            "title": "Dappdouble - Tron Network based website.",
+            "desc": "The site consists of 3 pages, the main one of which is a dashboard. The task of the project was to create an adaptive dashboard for creating a react application. <br> ",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "BEM Methodology + SCSS",
+                "Technologies: React",
+                "Grid: Custom",
+                "Adaptability of the layout: Responsive + Adaptive"
+            ],
+            "technologies": [
+                "React",
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "SCSS",
+                "Adaptive",
+                "SVG"
+            ],
+            "link": "3"
+        },
+        {
+            "id": 15,
+            "imageName": "appgrooves_",
+            "title": "Appgrooves - Mobile Apps ranking system.",
+            "desc": "In this project, the main task was to create a layout for the site's main page and news feed. The site compares and describes mobile applications and a component-based approach was taken for development. The site is fully responsive. <br> ",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "BEM Methodology + SCSS",
+                "Technologies: SVG / Retina Graphics",
+                "Grid: Custom",
+                "Adaptability of the layout: Responsive + Adaptive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari"
+            ],
+            "technologies": [
+                "React",
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "SCSS",
+                "Adaptive",
+                "SVG",
+                "Font Awesome Icons"
+            ],
+            "link": "#"
+        },
+
+        {
+            "id": 16,
+            "imageName": "circular-landing_",
+            "title": "Circular Shift - International conference website.",
+            "desc": "6 page responsive website for an international conference in the Netherlands. The site is made using the most modern technologies. During the development, various animations were used to improve the client's involvement in the site. <br> ",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "BEM Methodology + SCSS",
+                "Technologies: SVG / Animations",
+                "Grid: Custom",
+                "Adaptability of the layout: Responsive + Adaptive"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "SCSS",
+                "Adaptive",
+                "GSAP",
+                "SVG / CSS Animations"
+            ],
+            "link": "https://ilonikso.github.io/circular-shift-test/"
+        },
+        {
+            "id": 17,
+            "imageName": "bigwave_",
+            "title": "Bigwawe - Protein company website.",
+            "desc": "6 page responsive website for an international conference in the Netherlands. The site is made using the most modern technologies. During the development, various animations were used to improve the client's involvement in the site. <br> ",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "BEM + SCSS",
+                "GSAP Animations",
+                "Technologies: SVG / Animations",
+                "Grid: Custom",
+                "Adaptability of the layout: Responsive"
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "SCSS",
+                "Adaptive",
+                "GSAP",
+                "SVG / CSS Animations"
+            ],
+            "link": "https://bigwave-test.netlify.app/"
         }
+
+        
     ]
 }
