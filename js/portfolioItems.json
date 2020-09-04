@@ -425,8 +425,30 @@
                 "SVG / CSS Animations"
             ],
             "link": "https://bigwave-test.netlify.app/"
+        },
+        {
+            "id": 18,
+            "imageName": "raheem-new_",
+            "title": "Raheem - Mobile Apps ranking system.",
+            "desc": "Landing page for the application site. The site compares and describes mobile applications and a component-based approach was taken for development. The site is fully responsive. <br> ",
+            "list": [
+                "Layout standards: HTML5, CSS3",
+                "BEM Methodology + SCSS",
+                "Technologies: SVG / Retina Graphics",
+                "Grid: Custom",
+                "Adaptability of the layout: Responsive + Adaptive",
+                "Cross-browser compatibility: IE10 +, Chrome, Firefox, Opera, Safari"
+            ],
+            "technologies": [
+                "React",
+                "HTML5",
+                "CSS3",
+                "BEM",
+                "SCSS",
+                "Adaptive",
+                "SVG"
+            ],
+            "link": "https://ilonikso.github.io/raheem-landing-test/"
         }
-
-        
     ]
 }
